@@ -1,0 +1,113 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f3f4f6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.intro {
+    margin-bottom: 25px;
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #7f8c8d;
+    text-align: center;
+}
+
+/* Influencer Styles */
+.influencer {
+    display: flex;
+    flex-direction: column; /* Kolom untuk menumpuk elemen secara vertikal */
+    align-items: center;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9fafb;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #ffffff;
+}
+
+.influencer:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5);
+}
+
+.influencer img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #3498db;
+    margin-bottom: 15px; /* Tambahkan margin bawah untuk memberikan ruang antara gambar dan konten */
+    transition: border-color 0.3s ease;
+}
+
+.influencer:hover img {
+    border-color: #2980b9;
+}
+
+.influencer h2 {
+    margin: 0;
+    font-size: 1.8em;
+    color: #34495e;
+}
+
+.followers {
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 10px 0 15px 0; /* Memberikan ruang antara followers dan paragraf */
+    font-size: 1.1em;
+    text-align: center; /* Pusatkan teks */
+}
+
+.influencer p {
+    margin: 0;
+    color: #7f8c8d;
+    line-height: 1.6;
+    text-align: center; /* Pusatkan teks */
+    margin-top: 15px; /* Tambahkan margin atas untuk memberikan ruang */
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.disclaimer {
+    font-size: 0.9em;
+    color: #bdc3c7;
+    font-style: italic;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .influencer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .influencer img {
+        margin: 0 0 15px 0;
+    }
+}
